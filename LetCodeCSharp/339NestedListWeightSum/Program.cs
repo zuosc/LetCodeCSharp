@@ -29,7 +29,13 @@ namespace _339NestedListWeightSum
             return DepthSumUtil(nestedList, 1);
         }
 
-        public int DepthSumUtil(IList<NestedInteger> nestedList, int depth)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nestedList"></param>
+        /// <param name="depth"></param>
+        /// <returns></returns>
+        private int DepthSumUtil(IEnumerable<NestedInteger> nestedList, int depth)
         {
             int sum = 0;
             foreach (NestedInteger nestedInt in nestedList)
@@ -52,7 +58,7 @@ namespace _339NestedListWeightSum
         IList<NestedInteger> GetList();
     }
 
-    class NestedInteger : INestedInteger
+    abstract class NestedInteger : INestedInteger
     {
 
         public List<List<int>> List;
