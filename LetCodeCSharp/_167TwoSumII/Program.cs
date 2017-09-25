@@ -5,7 +5,7 @@ namespace _167TwoSumII
     /// <summary>
     /// 
     /// </summary>
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
@@ -69,7 +69,7 @@ namespace _167TwoSumII
             //这个while循环条件很巧妙，二分搜索建议固定一个模板，这个就挺好固定的。
             while (start + 1 < end)
             {
-                //看，我刚说的是实话，而且这里middle的计算方法是防止越界。
+                //这里middle的计算方法是防止越界。
                 int middle = start + (end - start) / 2;
                 if (numbers[start] + numbers[end] < target)
                 {
