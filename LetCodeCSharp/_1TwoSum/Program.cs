@@ -10,7 +10,7 @@ namespace _1TwoSum
         {
 /*       Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
-         给你一个整形的数组，返回其中的两个值，使其相加为一个指定的数字
+         给你一个整型的数组，返回其中的两个值，使其相加为一个指定的数字
          You may assume that each input would have exactly one solution, and you may not use the same element twice.
          你可以假设每个输入都会有一个解决方案，而且你不能使用相同的元素两次
          
@@ -84,8 +84,8 @@ namespace _1TwoSum
 
             return null;
         }
-        
-        
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -103,18 +103,19 @@ namespace _1TwoSum
             for (int i = 0; i < nums.Length; i++)
             {
                 var aim = target - nums[i];
-                if(dict.ContainsKey(aim))
+                if (dict.ContainsKey(aim))
                 {
-                    return new int[] { dict[aim], i };
+                    return new int[] {dict[aim], i};
                 }
                 else
                 {
-                    if(!dict.ContainsKey(nums[i]))
+                    if (!dict.ContainsKey(nums[i]))
                         dict.Add(nums[i], i);
                 }
             }
 
             return null;
         }
+
     }
 }
