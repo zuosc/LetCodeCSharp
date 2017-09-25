@@ -60,6 +60,17 @@ namespace _167TwoSumII
         }
 
 
+        /// <summary>
+        /// 双指针法
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <param name="target"></param>
+        /// <remarks>
+        /// 双指针，指的是在遍历对象的过程中，不是普通的使用单个指针进行访问，
+        /// 而是使用两个相同方向或者相反方向的指针进行扫描，从而达到相应的目的。
+        /// http://blog.csdn.net/ohmygirl/article/details/7850068
+        /// </remarks>
+        /// <returns></returns>
         private static int[] TwoSum1(int[] numbers, int target)
         {
             int[] result = new int[2];
