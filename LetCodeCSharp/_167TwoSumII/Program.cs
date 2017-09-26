@@ -74,10 +74,10 @@ namespace _167TwoSumII
         private static int[] TwoSum1(int[] numbers, int target)
         {
             int[] result = new int[2];
-            //这里用二分搜索，我常用start和end来命名两头，middle是中间。
+            //这里用二分搜索，用start和end来命名两头，middle是中间。
             int start = 0;
             int end = numbers.Length - 1;
-            //这个while循环条件很巧妙，二分搜索建议固定一个模板，这个就挺好固定的。
+            
             while (start + 1 < end)
             {
                 //这里middle的计算方法是防止越界。
