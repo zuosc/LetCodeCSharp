@@ -14,7 +14,7 @@ namespace _170TwoSumIII_DataStructureDesign
             add - Add the number to an internal data structure.
             增加-增加一个数字到内部数据结构周昂
             find - Find if there exists any pair of numbers which sum is equal to the value.
-            查找-查找是否存在任何一堆数字，其总和等于该值
+            查找-查找是否存在任何一对数字，其总和等于该值
             For example,
             add(1); add(3); add(5);
             find(4) -> true

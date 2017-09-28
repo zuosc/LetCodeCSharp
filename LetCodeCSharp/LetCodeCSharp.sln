@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_1TwoSum", "_1TwoSum\_1TwoS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_167TwoSumII", "_167TwoSumII\_167TwoSumII.csproj", "{D3BAF9D5-DED2-4128-9876-4FD5FF5B1918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_170TwoSumIII-DataStructureDesign", "_170TwoSumIII-DataStructureDesign\_170TwoSumIII-DataStructureDesign.csproj", "{AB2AC5A7-DBDA-411F-8F28-DC7E2C79334C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_170TwoSumIII-DataStructureDesign", "_170TwoSumIII-DataStructureDesign\_170TwoSumIII-DataStructureDesign.csproj", "{AB2AC5A7-DBDA-411F-8F28-DC7E2C79334C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_657JudgeRouteCircle", "_657JudgeRouteCircle\_657JudgeRouteCircle.csproj", "{57932C89-AC39-4A06-9AD4-C41E16B7950D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AB2AC5A7-DBDA-411F-8F28-DC7E2C79334C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB2AC5A7-DBDA-411F-8F28-DC7E2C79334C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB2AC5A7-DBDA-411F-8F28-DC7E2C79334C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57932C89-AC39-4A06-9AD4-C41E16B7950D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57932C89-AC39-4A06-9AD4-C41E16B7950D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57932C89-AC39-4A06-9AD4-C41E16B7950D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57932C89-AC39-4A06-9AD4-C41E16B7950D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

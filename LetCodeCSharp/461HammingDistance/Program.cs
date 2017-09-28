@@ -8,7 +8,7 @@ namespace _461HammingDistance
             Hamming Distance 
             汉明距离(汉明权重)
             The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
-
+            两个等长字符串之间的汉明距离是两个整数对应位置的不同字符的个数（就是将一个字符串变换成另外一个字符串所需要替换的字符个数）
             Given two integers x and y, calculate the Hamming distance.
             Note:
             0 ≤ x, y< 2^31.
@@ -27,7 +27,7 @@ namespace _461HammingDistance
 
         static void Main(string[] args)
         {
-            var distance = HammingDistance(1, 2147483647);
+            var distance = HammingDistance(0, 2147483647);//2147483647为int32最大值
             Console.WriteLine(distance);
             Console.ReadKey();
         }
