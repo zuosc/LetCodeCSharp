@@ -7,7 +7,6 @@ namespace _535EncodeAndDecodeTinyURL
     {
         static void Main(string[] args)
         {
-
             /*
              TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl 
              TinyURL 是一个缩短服务，当你输入一个Url时
@@ -21,39 +20,48 @@ namespace _535EncodeAndDecodeTinyURL
             您只需确保将URL编码为一个短的URL，并将该短的URL解码为原始URL。
              */
 
-
-
-
-
-            Console.WriteLine("Hello World!");
+            var shorturl = Encode("/problems/design-tinyurl");
+            Console.WriteLine($"shorturl:{shorturl}");
+            var longurl = Decode(shorturl);
+            Console.WriteLine($" longurl:{longurl}");
+            Console.ReadKey();
         }
 
-        private string dictStr = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        private Dictionary<string, string> short2long = new Dictionary<string, string>();
-        private Dictionary<string, string> long2short = new Dictionary<string, string>();
+        private static readonly string DictStr = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        private static readonly Dictionary<string, string> Short2Long = new Dictionary<string, string>();
+        private static readonly Dictionary<string, string> Long2Short = new Dictionary<string, string>();
 
         // Encodes a URL to a shortened URL.
         //http://www.cnblogs.com/grandyang/p/6562209.html
-        private string Encode(string longUrl)
+        private static string Encode(string longUrl)
         {
-            if (long2short.ContainsKey(longUrl))
+            if (Long2Short.ContainsKey(longUrl))
             {
-                return "http://tinyurl.com/" + long2short[longUrl];
+                return "http://tinyurl.com/" + Long2Short[longUrl];
             }
-            int idx = 0;
-            string randStr;
-            for (int i = 0; i < 6; ++i)
+            var idx = 0;
+            var randStr = new char[6];
+            var ran = new Random();
+
+            for (var i = 0; i < 6; ++i)
             {
-                randStr.push_back(dict[rand() % 62]);
+                randStr[i] = (DictStr[ran.Next(0, 62)]);
             }
-            while (short2long.ContainsKey(randStr))
+            var key = new string(randStr);
+            while (Short2Long.ContainsKey(key))
             {
-                randStr[idx] = dict[rand() % 62];
+                randStr[idx] = DictStr[ran.Next(0, 62)];
                 idx = (idx + 1) % 5;
             }
-            short2long[randStr] = longUrl;
-            long2short[longUrl] = randStr;
-            return "http://tinyurl.com/" + randStr;
+            Short2Long[key] = longUrl;
+            Long2Short[longUrl] = key;
+            return "http://tinyurl.com/" + key;
+        }
+
+        private static string Decode(string shortUrl)
+        {
+            var randStr = shortUrl.Substring(shortUrl.LastIndexOf('/') + 1);
+            return Short2Long.ContainsKey(randStr) ? "http://tinyurl.com/" + Short2Long[randStr] : shortUrl;
         }
     }
 }
