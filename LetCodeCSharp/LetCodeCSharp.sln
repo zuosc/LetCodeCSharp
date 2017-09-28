@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_657JudgeRouteCircle", "_65
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_617MergeTwoBinaryTrees", "_617MergeTwoBinaryTrees\_617MergeTwoBinaryTrees.csproj", "{9511D7FA-F665-40B0-8664-43171A474589}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_535EncodeAndDecodeTinyURL", "_535EncodeAndDecodeTinyURL\_535EncodeAndDecodeTinyURL.csproj", "{7A237DF6-597A-4AF7-A0E3-83E078EDE4D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{9511D7FA-F665-40B0-8664-43171A474589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9511D7FA-F665-40B0-8664-43171A474589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9511D7FA-F665-40B0-8664-43171A474589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A237DF6-597A-4AF7-A0E3-83E078EDE4D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A237DF6-597A-4AF7-A0E3-83E078EDE4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A237DF6-597A-4AF7-A0E3-83E078EDE4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A237DF6-597A-4AF7-A0E3-83E078EDE4D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
