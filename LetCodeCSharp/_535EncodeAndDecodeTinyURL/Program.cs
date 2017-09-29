@@ -32,7 +32,6 @@ namespace _535EncodeAndDecodeTinyURL
         private static readonly Dictionary<string, string> Long2Short = new Dictionary<string, string>();
 
         // Encodes a URL to a shortened URL.
-        //http://www.cnblogs.com/grandyang/p/6562209.html
         private static string Encode(string longUrl)
         {
             if (Long2Short.ContainsKey(longUrl))
