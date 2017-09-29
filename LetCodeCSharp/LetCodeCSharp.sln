@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_12IntegerToRoman", "_12Int
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_13RomanToInteger", "_13RomanToInteger\_13RomanToInteger.csproj", "{6345B3A7-D43E-415C-9CCB-49970C52E218}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_639DecodeWaysII", "_639DecodeWaysII\_639DecodeWaysII.csproj", "{23E196D0-5D11-4AD3-96D0-6EA0604D1BA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{6345B3A7-D43E-415C-9CCB-49970C52E218}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6345B3A7-D43E-415C-9CCB-49970C52E218}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6345B3A7-D43E-415C-9CCB-49970C52E218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E196D0-5D11-4AD3-96D0-6EA0604D1BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E196D0-5D11-4AD3-96D0-6EA0604D1BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E196D0-5D11-4AD3-96D0-6EA0604D1BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E196D0-5D11-4AD3-96D0-6EA0604D1BA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
