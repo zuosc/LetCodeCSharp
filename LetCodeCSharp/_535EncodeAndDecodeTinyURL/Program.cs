@@ -50,6 +50,7 @@ namespace _535EncodeAndDecodeTinyURL
             while (Short2Long.ContainsKey(key))
             {
                 randStr[idx] = DictStr[ran.Next(0, 62)];
+                key = new string(randStr);
                 idx = (idx + 1) % 5;
             }
             Short2Long[key] = longUrl;
